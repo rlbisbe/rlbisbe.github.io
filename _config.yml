@@ -1,5 +1,24 @@
 name: rlbisbe @ dev
-markdown: redcarpet
-pygments: true
+markdown: kramdown
+highlighter: rouge
 permalink: /:year/:month/:day/:title
 paginate: 5
+
+# Modern Jekyll settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+# Performance and SEO
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
