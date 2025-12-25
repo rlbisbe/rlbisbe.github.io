@@ -1,0 +1,318 @@
+/* Dark mode styles based on browser settings */
+@media (prefers-color-scheme: dark) {
+  /* Basic structure */
+  body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+  }
+
+  body.custom-background-empty,
+  body .site {
+    background-color: #2d2d2d;
+  }
+
+  /* Headers and text */
+  h1, h2, h3, h4, h5, h6 {
+    color: #f0f0f0;
+  }
+
+  /* Links */
+  a {
+    color: #6db3f2;
+  }
+
+  a:hover {
+    color: #8ac5f7;
+  }
+
+  a:visited {
+    color: #b19cd9;
+  }
+
+  /* Site header */
+  .site-header h1 a,
+  .site-header h2 a {
+    color: #e0e0e0;
+  }
+
+  .site-header h1 a:hover,
+  .site-header h2 a:hover {
+    color: #6db3f2;
+  }
+
+  .site-header h2 {
+    color: #b0b0b0;
+  }
+
+  /* Navigation */
+  .main-navigation li a {
+    color: #b0b0b0;
+  }
+
+  .main-navigation li a:hover {
+    color: #6db3f2;
+    background-color: #3a3a3a;
+  }
+
+  .main-navigation ul.nav-menu,
+  .main-navigation div.nav-menu > ul {
+    border-color: #404040;
+  }
+
+  .main-navigation li ul li a {
+    background: #333333;
+    border-bottom: 1px solid #404040;
+    color: #e0e0e0;
+  }
+
+  .main-navigation li ul li a:hover {
+    background: #3a3a3a;
+    color: #6db3f2;
+  }
+
+  .main-navigation .current-menu-item > a,
+  .main-navigation .current-menu-ancestor > a,
+  .main-navigation .current_page_item > a,
+  .main-navigation .current_page_ancestor > a {
+    color: #f0f0f0;
+  }
+
+  /* Content */
+  .entry-header .entry-title,
+  .entry-header .entry-title a {
+    color: #f0f0f0;
+  }
+
+  .entry-content,
+  .entry-summary,
+  .comment-content {
+    color: #d0d0d0;
+  }
+
+  .entry-content a:visited,
+  .comment-content a:visited {
+    color: #b19cd9;
+  }
+
+  /* Code blocks */
+  .entry-content code,
+  .comment-content code,
+  .post code {
+    background-color: #1e1e1e;
+    border-color: #404040;
+    color: #d4d4d4;
+  }
+
+  .entry-content pre,
+  .comment-content pre,
+  .post pre {
+    background-color: #1e1e1e;
+    border-color: #404040;
+    color: #d4d4d4;
+  }
+
+  .post pre:not(.terminal) {
+    background-color: #1e1e1e;
+    border-color: #404040;
+  }
+
+  .post pre code {
+    background-color: #1e1e1e;
+  }
+
+  /* Tables */
+  .entry-content table,
+  .comment-content table {
+    border-bottom-color: #404040;
+    color: #b0b0b0;
+  }
+
+  .entry-content td,
+  .comment-content td {
+    border-top-color: #404040;
+  }
+
+  /* Borders and dividers */
+  hr {
+    background-color: #404040;
+  }
+
+  .archive-header,
+  .page-header {
+    border-bottom-color: #404040;
+  }
+
+  .site-content article {
+    border-bottom-color: #404040;
+  }
+
+  footer,
+  footer[role="contentinfo"] {
+    border-top-color: #404040;
+    color: #b0b0b0;
+  }
+
+  footer a,
+  footer[role="contentinfo"] a {
+    color: #9a9a9a;
+  }
+
+  footer a:hover,
+  footer[role="contentinfo"] a:hover {
+    color: #6db3f2;
+  }
+
+  /* Widget area */
+  .widget-area {
+    border-top-color: #404040;
+  }
+
+  .widget-area .widget a {
+    color: #b0b0b0;
+  }
+
+  .widget-area .widget a:hover {
+    color: #6db3f2;
+  }
+
+  .widget-area .widget a:visited {
+    color: #9a9a9a;
+  }
+
+  .widget-title,
+  .archive-title,
+  .page-title {
+    color: #c0c0c0;
+  }
+
+  /* Meta information */
+  .meta,
+  .entry-meta,
+  .entry-meta a,
+  .comments-link a,
+  footer.entry-meta,
+  footer.entry-meta a {
+    color: #888888;
+  }
+
+  .entry-meta a:hover,
+  .comments-link a:hover {
+    color: #6db3f2;
+  }
+
+  /* Posts list */
+  .posts span {
+    color: #888888;
+  }
+
+  /* Forms and inputs */
+  button,
+  input,
+  textarea {
+    background-color: #2d2d2d;
+    border-color: #404040;
+    color: #e0e0e0;
+  }
+
+  input[type="submit"],
+  input[type="button"],
+  input[type="reset"],
+  button {
+    background-color: #3a3a3a;
+    background-image: linear-gradient(to bottom, #404040, #333333);
+    border-color: #555555;
+    color: #d0d0d0;
+  }
+
+  input[type="submit"]:hover,
+  input[type="button"]:hover,
+  input[type="reset"]:hover,
+  button:hover {
+    background-color: #404040;
+    background-image: linear-gradient(to bottom, #4a4a4a, #3a3a3a);
+    color: #e0e0e0;
+  }
+
+  /* Blockquotes */
+  .entry-content blockquote,
+  .comment-content blockquote {
+    background: #2a2a2a;
+    color: #c0c0c0;
+  }
+
+  /* Comments */
+  .comments-area article header time,
+  .comments-area article header a {
+    color: #b0b0b0;
+  }
+
+  .comments-area article header a:hover {
+    color: #6db3f2;
+  }
+
+  .comments-area article header cite a {
+    color: #d0d0d0;
+  }
+
+  a.comment-reply-link,
+  a.comment-edit-link {
+    color: #9a9a9a;
+  }
+
+  a.comment-reply-link:hover,
+  a.comment-edit-link:hover {
+    color: #6db3f2;
+  }
+
+  /* Aside post format */
+  article.format-aside .aside {
+    background: #2a3a4a;
+    border-left-color: #3a5a7a;
+  }
+
+  article.format-aside p {
+    color: #c0d0e0;
+  }
+
+  /* Quote format */
+  article.format-quote .entry-content blockquote {
+    background: #2a2a2a;
+    color: #c0c0c0;
+  }
+
+  /* Syntax highlighting adjustments for dark mode */
+  .highlight {
+    background-color: #1e1e1e;
+  }
+
+  /* Author info */
+  .author-info {
+    border-top-color: #404040;
+  }
+
+  .author-description p {
+    color: #b0b0b0;
+  }
+
+  /* Image captions */
+  .wp-caption .wp-caption-text,
+  .gallery-caption,
+  .entry-caption {
+    color: #b0b0b0;
+  }
+
+  /* Archive meta */
+  .archive-meta {
+    color: #b0b0b0;
+  }
+
+  /* Delete marker */
+  del {
+    color: #a0a0a0;
+  }
+
+  /* Insert marker */
+  ins {
+    background: #4a4a2a;
+  }
+}
